@@ -4,12 +4,20 @@
 COMMANDS:
 
 ### ................
-mkdir -p ~/practice && cd ~/practice          # Create a directory and cd into the directory
-touch file1.txt file2.txt file3.txt           # create three files 
-echo "hello linux" > file1.txt                # write into file1.txt
-cp file2.txt file1_copy.txt                   # copy file2.txt into file1_copy.txt
-mv file2.txt renamed.txt                      # move file2.txt to renamed.txt (rename.tx created) 
-rm -i file3.txt                               # remove file3.txt with confirmation prompt
+mkdir -p ~/practice && cd ~/practice          
+#### Create a directory and cd into the directory
+touch file1.txt file2.txt file3.txt           
+#### create three files 
+echo "hello linux" > file1.txt                
+#### write into file1.txt
+cp file2.txt file1_copy.txt                   
+#### copy file2.txt into file1_copy.txt
+mv file2.txt renamed.txt                      
+#### move file2.txt to renamed.txt (rename.tx created) 
+rm -i file3.txt                               
+#### remove file3.txt with confirmation prompt
+
+
 ### ................
 output of rm -i file3.txt
 rm: remove regular empty file 'file3.txt'? y
