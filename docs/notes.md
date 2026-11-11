@@ -5,9 +5,9 @@ COMMANDS:
 
 ### ................
 1. mkdir -p ~/practice && cd ~/practice          
-###### Creates a directory and cd into the directory
+#### Creates a directory and cd into the directory
 2. touch file1.txt file2.txt file3.txt           
-##### create three files 
+#### create three files 
 3. echo "hello linux" > file1.txt                
 ##### write into file1.txt
 4. cp file2.txt file1_copy.txt                   
