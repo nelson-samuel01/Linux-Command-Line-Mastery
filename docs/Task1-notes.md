@@ -1,6 +1,6 @@
 # Linux Command Line Notes
 
-## Task 1: File Management
+## Task 1a: File Management
 ### Creating, Copying, and Renaming Files
 
 The following commands were used to create a working directory, create files, write content, copy files, rename files, and remove a file safely.
@@ -61,11 +61,14 @@ total 4
 
 ---
 
-## Task 1b: Viewing and Searching File Contents
+## Task 1b: 
+Viewing and Searching File Contents
 
 This section focuses on viewing file contents, navigating text files, and searching for specific patterns.
 
-### 1. Creating and removing a directory
+### 1b: File Management 
+
+### Creating and removing a directory
 
 ```bash
 mkdir old && touch old/a.txt
