@@ -23,8 +23,8 @@ total 4
 
 Observation: 'cp' leaves the original; 'mv' remove the old name, so it acts as rename; 'rm -i' remove the file and asking for confirmation to avoid accidental deletion.
 
-# Task 1b: file management 
-## View and search contents
+## Task 1b: file management 
+### View and search contents
 
 COMMANDS:
 
