@@ -4,17 +4,17 @@
 COMMANDS:
 
 ### ................
-mkdir -p ~/practice && cd ~/practice          
+1. mkdir -p ~/practice && cd ~/practice          
 #### Create a directory and cd into the directory
-touch file1.txt file2.txt file3.txt           
+2. touch file1.txt file2.txt file3.txt           
 #### create three files 
-echo "hello linux" > file1.txt                
+3. echo "hello linux" > file1.txt                
 #### write into file1.txt
-cp file2.txt file1_copy.txt                   
+4. cp file2.txt file1_copy.txt                   
 #### copy file2.txt into file1_copy.txt
-mv file2.txt renamed.txt                      
+5. mv file2.txt renamed.txt                      
 #### move file2.txt to renamed.txt (rename.tx created) 
-rm -i file3.txt                               
+6. rm -i file3.txt                               
 #### remove file3.txt with confirmation prompt
 
 
