@@ -31,4 +31,3 @@ cd /tmp && ls -l
 ## Summary
 
 `pwd` shows the current location, while `cd` changes directories using absolute or relative paths. `mkdir -p` creates nested directories, and `ls -l` displays directory contents in detail.
-```
