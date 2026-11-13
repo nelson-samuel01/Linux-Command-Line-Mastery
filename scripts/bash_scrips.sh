@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Home Directory Setup and Logging Script
+
 # variable: base directory and log file
 BASE_DIR="$HOME/script_demo"
 LOG_FILE="$BASE_DIR/activity.log"
@@ -26,3 +28,9 @@ for dir in "${DIRS[@]}"; do
 done
 
 echo "Done. see log at $LOG_FILE"
+
+
+# This script sets the base folder to ~/script_demo and the log file to ~/script_demo/activity.log.
+#If script_demo doesn’t exist, it creates it and records that in the log. If it already exists, it logs that instead.
+#It checks for four subfolders—logs, backups, reports, and temp—and creates any that are missing. Existing folders are left in place, and the script logs that they were skipped.
+#It prints a final message showing where to find the log.
