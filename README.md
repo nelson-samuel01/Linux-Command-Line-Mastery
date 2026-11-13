@@ -95,3 +95,110 @@ By completing the checklist, you will have practiced how to:
 - build simple command pipelines and save both normal output and errors.
 
 Keep practicing in a safe environment, read command options before using them, and verify paths and permissions before making changes.
+
+---
+
+# Bash Script Setup and Logging Guide
+
+This project contains a simple Bash script named `bash_scrips.sh` that helps automate a basic environment setup task. The script creates a working directory in the user's home folder, checks for required subfolders, and records all actions in a log file.
+
+## Overview
+
+The script is designed to:
+
+- create a base folder at `~/script_demo`
+- create a log file named `activity.log` inside that folder
+- check whether the following subdirectories exist:
+  - `logs`
+  - `backups`
+  - `reports`
+  - `temp`
+- create any missing directories automatically
+- skip existing directories without overwriting them
+- log each action to the activity log
+- display a final message indicating where the log is located
+
+This is a practical example of using Bash scripting for automation, file creation, conditionals, loops, and logging.
+
+## Script Usage
+
+Run the script from the repository root with:
+
+```bash
+bash scripts/bash_scrips.sh
+```
+
+Or, from the `scripts` directory, if it has execute permission:
+
+```bash
+./bash_scrips.sh
+```
+
+The script will create the folder structure and print a final completion message like:
+
+```text
+Done. see log at /home/your_username/script_demo/activity.log
+```
+
+## Command List
+
+Below is a summary of the key commands and logic used in the script:
+
+- `BASE_DIR="$HOME/script_demo"`
+  Sets the main folder path.
+
+- `LOG_FILE="$BASE_DIR/activity.log"`
+  Defines the log file location.
+
+- `DIRS=("logs" "backups" "reports" "temp")`
+  Stores the folder names to be checked.
+
+- `if [ ! -d "$BASE_DIR" ]; then`
+  Checks whether the base folder already exists.
+
+- `mkdir -p "$BASE_DIR"`
+  Creates the folder if it does not exist.
+
+- `echo "$(date): ..." >> "$LOG_FILE"`
+  Appends timestamps and messages to the log file.
+
+- `for dir in "${DIRS[@]}"; do`
+  Loops through the required subdirectories.
+
+- `if [ ! -d "$BASE_DIR/$dir" ]; then`
+  Checks if each subfolder is missing.
+
+- `mkdir "$BASE_DIR/$dir"`
+  Creates missing subdirectories.
+
+- `else`
+  Handles the case where a directory already exists.
+
+- `echo "Done. see log at $LOG_FILE"`
+  Prints the script completion message.
+
+## Completion Checklist
+
+- [ ] The script runs without errors
+- [ ] `~/script_demo` exists
+- [ ] `~/script_demo/activity.log` was created
+- [ ] `logs`, `backups`, `reports`, and `temp` exist inside `~/script_demo`
+- [ ] Existing folders are not recreated unnecessarily
+- [ ] Log entries show timestamps for created or skipped folders
+- [ ] The final message appears in the terminal
+
+## Final Learning Summary
+
+This script is a strong beginner-level example of Bash automation. It introduces several important concepts:
+
+- shell variables and path management
+- conditional statements using `if` and `[`
+- loops for repeating tasks across multiple directories
+- directory creation with `mkdir`
+- log writing with redirection (`>>`)
+- timestamping events using `date`
+- simple automation flow for setup tasks
+
+By completing this script, you gain a better understanding of how Bash can be used to automate repetitive system setup tasks in a safe and organized way.
+
+This project is a useful foundation for more advanced scripting tasks such as cleanup scripts, backup automation, system monitoring, and deployment tasks.
