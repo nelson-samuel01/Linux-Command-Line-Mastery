@@ -29,6 +29,7 @@ done
 
 echo "Done. see log at $LOG_FILE"
 
+# SCRIPT DESCRIPTION: 
 
 # This script sets the base folder to ~/script_demo and the log file to ~/script_demo/activity.log.
 #If script_demo doesn’t exist, it creates it and records that in the log. If it already exists, it logs that instead.
